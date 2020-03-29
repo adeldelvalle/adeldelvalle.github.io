@@ -13,8 +13,6 @@ const Header = (props) => {
             display: flex;
             flex-direction: row;
             margin-top: 150px;
-          
-            
         }
 
         .first { 
@@ -53,40 +51,9 @@ const Header = (props) => {
 
         
 
-        .adel 
-        {
-            color: #ff7c43;
-            margin-right: 125px;
-            font-weight: 400;
-            font-size: 2.5rem;
-            margin-top: -50px;
-        }
+        
 
-    
-        .triangle {
-            margin-top: 8px;
-            margin-left: -450px;
-            width: 400px;
-            height: 400px;
-            position: absolute;
-            top: 30%;
-            left: 45%;
-            clip: rect(auto, 700px, auto, 270px);
-            transform: rotate(90deg);
-            opacity: .5;
-            }
-            
-            .triangle::after {
-            content: "";
-            position: absolute;
-            top: 10px;
-            bottom: 5px;
-            left: 10px;
-            right: 10px;
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff7c43), color-stop(100%, #ffa600));
-            transform: rotate(45deg);
-            }
-          }
+        
         
     `;
 
@@ -95,19 +62,14 @@ const Header = (props) => {
         <Styles>
         <Container>
             <div className="head1">
-            <h1 className="first">Mathematician.</h1>
-            <h2 className="second">Pattern finder.</h2>
+            <h1 className="first">Mathematician,</h1>
+            <h2 className="second">Pattern finder,</h2>
             <h3 className="third">Data Driven.</h3>
             </div>
             
             
         </Container>
-        <Container>
-            <div>
-                <h1 className="adel">This is Adel del Valle.</h1>
-            </div>
-            <div class="triangle"></div>
-        </Container>
+        
             
         </Styles>
     );

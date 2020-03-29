@@ -13,6 +13,7 @@ const Styles = styled.div`
 
     .navbar-brand, .navbar-nav, .nav-link {
         background: white;
+        background: -webkit-linear-gradient(#bc5090, #694f69);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: 'Roboto', sans-serif;
@@ -45,7 +46,7 @@ const Styles = styled.div`
 export const NavBar = () => (
     <Styles>
         <Navbar scrolling dark expand="md" fixed="top" >
-            <Navbar.Brand href="/">Portfolio</Navbar.Brand>
+            <Navbar.Brand href="/">Adel del Valle</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
