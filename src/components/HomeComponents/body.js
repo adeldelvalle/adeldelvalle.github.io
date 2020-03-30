@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, Jumbotron as Jumbo } from 'react-bootstrap';
 
-
+import Content from './content';
 import boatImage from './bg1.jpg';
 
 
@@ -14,7 +14,7 @@ const Body = (props) => {
     .container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         
     }
 
@@ -23,6 +23,7 @@ const Body = (props) => {
         background-image: url(${boatImage});
         filter: blur(0px);
         background-size: 100%;
+        background-repeat: no;
         top: 0;
         left: 0;
         bottom: 0;
@@ -41,11 +42,10 @@ const Body = (props) => {
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
         font-size: 2rem;
-        margin-top: 260px;
+        margin-top: 230px;
         z-index: 2;
         text-align: center;
         opacity: 0.9;
-        width: 500px;
 
         }
 
@@ -70,11 +70,13 @@ const Body = (props) => {
             <div className='blur'></div>
             <div className="gradient"></div>
         <Container>  
-        <h1 className="adel">Natural Language Processing.</h1>
-        <h1 className="adel">Deep and Machine Learning.</h1>
+        <h1 className="adel">Natural Language<br /> Processing.</h1>
+        <h1 className="adel">Deep and Machine <br />Learning.</h1>
         <h1 className="adel">Data <br /> Analytics. </h1>
         </Container>
+        <Content/>
         </Styles>
+        
     )
 }
 

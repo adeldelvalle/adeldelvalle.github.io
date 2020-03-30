@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 
-import portada from './header.jpg';
 
 
 const Header = (props) => {
@@ -12,7 +11,7 @@ const Header = (props) => {
             margin-top: 40px;
             display: flex;
             flex-direction: row;
-            margin-top: 150px;
+            margin-top: 180px;
         }
 
         .first { 
