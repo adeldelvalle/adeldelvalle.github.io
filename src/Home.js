@@ -40,7 +40,6 @@ export const Home = () => (
     <Container>
       <Header />
        <div className='bg'></div>
-       <div className='overlay1'></div>
       <Body/>
   </Container>
   </Styles>
