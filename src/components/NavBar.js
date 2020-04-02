@@ -12,10 +12,7 @@ const Styles = styled.div`
     }
 
     .navbar-brand, .navbar-nav, .nav-link {
-        background: white;
-        background: -webkit-linear-gradient(#bc5090, #694f69);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: white;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
 
@@ -29,7 +26,7 @@ const Styles = styled.div`
     }
 
     .a {
-        color: ;
+        color: white;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 1rem;

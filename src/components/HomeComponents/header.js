@@ -7,46 +7,59 @@ import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 const Header = (props) => {
     const Styles = styled.div`
         .container {
-            font-family: 'Raleway', sans-serif;
-            margin-top: 40px;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 90px;
             display: flex;
             flex-direction: row;
             margin-top: 180px;
         }
 
         .first { 
-            color: #561985;
+            color: white;
             text-align: left;
-            font-weight: 400;
-            font-size: 3.5rem;
+            font-weight: 500;
+            font-size: 4.5rem;
             
         }
 
         .second {
-            color:#bc5090;
+            color: white;
             text-align: left;
             margin-right: 75px;
-            font-weight: 400;
-            font-size: 3rem;
+            font-weight: 500;
+            font-size: 4rem;
             
         }
 
         .third {
-            color: #ff6361;
+            color: white;
             margin-right: 125px;
-            font-weight: 400;
-            font-size: 2.5rem;
+            font-weight: 500;
+            font-size: 3.5rem;
         }
 
       
        
         .head1 {
+            padding-right: 30px;
+            margin-top: 50px;
             border-style: solid;
-            border-width: 0px 0px 5px 0px;
-            border-bottom: 6px solid transparent;
-            border-image: linear-gradient(to right, #561985 , #bc5090);
-            border-image-slice: 1;
+            border-width: 0px 0px 0px 0px;
+            border-right: 5px solid white;
+            
         }
+
+        .four
+
+        {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            font-weight: 400;
+            margin-left: 50px;
+            margin-top: 120px;
+        }
+
+
 
         
 
@@ -65,6 +78,7 @@ const Header = (props) => {
             <h2 className="second">Pattern finder,</h2>
             <h3 className="third">Data Driven.</h3>
             </div>
+            <div className="tiny"><h1 className="four">Where nobody can see, I find a way. </h1></div>
             
             
         </Container>

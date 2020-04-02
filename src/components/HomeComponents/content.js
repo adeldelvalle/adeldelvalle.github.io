@@ -13,7 +13,7 @@ const Content = (props) => {
     {   
         display: flex;
         flex-direction: row;
-        margin-top: 50px;
+        margin-top: 100px;
         z-index: 5;
         color: white;
     
@@ -34,46 +34,54 @@ const Content = (props) => {
 
         }
 
-        .about 
+        .about
         {
-            margin-top: 90px;
-            text-align: center;            
-            color: white;
+            z-index: 1;
+            margin-top: 180px;
+            width: 50%;
+            height: 700px;
+            
+            border-style: solid;
+            border-width: 10px 0px 20px 20px;
+            border-image: linear-gradient(to top, rgba(237,86,74,1) 0% , rgba(121,36,106,1) 100%);
+            border-image-slice: 1;
+        }
+
+        .about1
+        {
+       
+            background-color: transparent;
             font-size: 3.5rem;
             font-family: 'Roboto', sans-serif;
-            font-weight: 300;
+            font-weight: 500;
             z-index: 1;
+            margin-top: 180px;
+            width: 50%;
+            height: 700px;
+            background: rgb(237,86,74);
+            background: linear-gradient(0deg, rgba(237,86,74,1) 0%, rgba(121,36,106,1) 100%);
             
-           
+            
 
         }
 
         .quote
         {
-            margin-top: 140px;
-            font-family: "Roboto", sans-serif;
+
+            text-align: left;
+            margin-left: 150px;
+            margin-top: 100px;
+            font-family: "Poppins", sans-serif;
             font-weight: 400px;
-            font-size: 3rem;
-            color: #0d1c4f;
-            margin-right: 70px;
-            text-align: center;
+            font-size: 5rem;
+            color: #472261;
+            
+            
+           
+
         }
 
-        .circle
-        {
-    
-        background-image: url(${ser});
-        background-size: 100%;
-        background: contain;
-        height: 240px;
-        width: 1520px;
-        background-repeat: no-repeat;
-        margin-top: 60px;
-        clip-path: polygon(100% 0, 100% 100%, 0% 0%);
-        z-index: 2;
-        float: left;
-        margin-left: -220px;
-    }
+       
 
     .circle1
         {
@@ -81,52 +89,56 @@ const Content = (props) => {
         background-color: #FAFAFA;
         height: 240px;
         width: 1520px;
-        margin-top: -237.5px;
+        margin-top: 111px;
         clip-path: polygon(0 100%, 100% 100%, 0% 0%);
         float: left;
         margin-left: -220px;
         z-index: 2;
         opacity: 1;
-        position: relative;
+        
     }
 
-    .gradient
-    {
-      margin-top: 541px;
-      background: rgb(13,28,79);
-      background: linear-gradient(0deg, rgba(13,28,79,1) 3%, rgba(51,8,84,0.6139589624912465) 100%); 
-            top: 0;
-      left: 0;
-      bottom: -240px;
-      right: 0;
-      z-index: 1;
-      position: absolute;
-    }
 
        
     .selfie
     {
+        display: flex;
+        flex-direction: column;
         background-image: url(${selfie});
         background-size: 100%;
         background: contain;
-        height: 300px;
-        width: 300px;
-        margin-top: 100px;
+        height: 200px;
+        width: 200px;
+        margin-top: -110px;
         border-radius: 50%;
-        
+        z-index: 1;
+        margin-left: 160px;        
     }
 
-    .selfbg
+    .selfbg.
     {
-    
+        background: rgb(121,36,106);
+        background: linear-gradient(0deg, rgba(121,36,106,1) 0%, rgba(13,28,79,1) 100%);
         
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         margin-top: 100px;
         margin-left: -30px;
         border-radius: 50%;
-        background: rgb(121,36,106);
-        background: linear-gradient(138deg, rgba(121,36,106,1) 0%, rgba(13,28,79,1) 99%); 
+    }
+
+    .me 
+    {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 50px;
+        color: white;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+    
+       
         
         
     }
@@ -135,17 +147,30 @@ const Content = (props) => {
     return(
         <Styles>
            <div className="back"></div>
-           <div className="circle"></div>
            <div className="circle1"></div>
            <div className='gradient'></div>
-            <Container>
-            
-            <h1 className="quote">"Where nobody can see, <br/> I find a way."</h1>
-            <div className="selfie">            </div>
-            </Container>
+           
 
             <Container>
-                <div className="selfbg"></div>
+                <div className="about">
+                <h1 className="quote">Who <br/> is <br/> Adel <br/> del <br/>Valle?</h1>
+
+                </div>
+          
+            <div className="about1"><div className="selfie">     
+            
+               </div>
+               <p className="me">Adel del Valle is an 
+            Undergraduate Junior Student at 
+            the University of Mayaguez, Puerto Rico. He is pursuing a 
+            double bachelor in Pure Math and Computer Science with a minor in Computational
+            Linguistics. Adel currently works as a Data Scientist, developing Machine Learning
+            models in the field of Natural Language Processing and Particle Physics. Adel was 
+            raised and grown in Caguas, Puerto Rico. He is 20 years old and have an 
+            incredible passion with mathematics.
+            
+            </p>    
+            </div>
             </Container>
             
         </Styles>
